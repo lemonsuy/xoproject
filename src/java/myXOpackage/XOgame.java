@@ -68,5 +68,21 @@ public class XOgame {
         this.tie = tie;
     }
        
-    
+    public boolean checkVertical(){
+        int pointer1 = 0;
+        int pointer2 = 3;
+        int pointer3 = 6;
+        
+        for(int i = 0 ; i<3 ;i++){
+        if(board[pointer1]=='x'&&board[pointer2]=='x'&&board[pointer3]=='x'){
+            return true;
+        }
+        else{
+            pointer1++;
+            pointer2++;
+            pointer3++;
+        }      
+        }
+        return false;
+    }
 }

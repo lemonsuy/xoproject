@@ -67,7 +67,6 @@ public class XOgame {
     public void setTie(int tie) {
         this.tie = tie;
     }
-    
-      
+       
     
 }
